@@ -9,10 +9,11 @@ let nickname = "Hades"; // Herói específico
 let nivel = "";
 
 // Percorre a lista de heróis
-for (let i = 0; i < herois.length; i++) {
+for (let i = 0; i < herois; i++) {
     // Verifica se o nickname corresponde ao herói da lista
+
     if (herois[i].nickname === nickname) {
-        let xp = herois[i].xp; // Obtém o XP do herói específico
+        let xp = herois[i]; // Obtém o XP do herói específico
 
         // Determina o nível baseado no XP
         if (xp < 1000) { 
@@ -34,7 +35,4 @@ for (let i = 0; i < herois.length; i++) {
         }
 
         
-        console.log("O Herói de nome " + nickname + " está no nível de " + nivel);
-        break; 
-    }
-}
+        console.log("O Herói de nome " + nickname + " está no nível de " + nivel)}}
